@@ -11,6 +11,9 @@
   --footer-address-color: rgba(255, 255, 255, 0.6);
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --filter-button-shadows: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --activity-card-shadows: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 p,
@@ -569,7 +572,7 @@ flex-basis: calc(100% / 3 - 30px);
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
-  background-color: var(--first-bg-color);
+  background-color: #f5f4fa;
   color: var(--second-text-color);
 }
 
@@ -577,6 +580,7 @@ flex-basis: calc(100% / 3 - 30px);
 .button-primary:focus {
   background-color: var(--accent-logo-color);
   color: var(--third-text-color);
+  box-shadow: var(--filter-button-shadows);
 }
 
 /* ------- Activity ------- */
@@ -601,6 +605,15 @@ flex-basis: calc(100% / 3 - 30px);
 }
 .activity-list .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.activity-item-link {
+  display: block;
+}
+
+.activity-item-link:hover,
+.activity-item-link:focus {
+  box-shadow: var(--activity-card-shadows);
 }
 
 .activity-item-title {
