@@ -3,6 +3,7 @@
   --second-text-color: #212121;
   --third-text-color: #ffffff;
   --accent-logo-color: #2196f3;
+  --social-network-bg-color: #afb1b8;
   --nav-bg-color: #ffffff;
   --first-bg-color: #e5e5e5;
   --second-bg-color: #f5f4fa;
@@ -246,6 +247,17 @@ button {
 
 /* ------- Features ------- */
 
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: var(--second-bg-color);
+}
+
 .section.features {
   padding-bottom: 0;
 }
@@ -365,6 +377,7 @@ button {
   padding-bottom: 30px;
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
+  background: var(--nav-bg-color);
 }
 
 /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -384,6 +397,75 @@ border-radius: 0px 0px 4px 4px; */
   text-align: center;
   color: var(--first-text-color);
 } */
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* .team-social-item {
+} */
+
+.team-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: var(--nav-bg-color);
+  color: var(--social-network-bg-color);
+}
+
+.team-social-icon {
+  fill: currentColor;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-logo-color);
+  color: var(--third-text-color);
+}
+
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+
+/* ------- Regular customers -------*/
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  fill: var(--social-network-bg-color);
+}
+
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  color: var(--social-network-bg-color);
+  border: 1px solid var(--social-network-bg-color);
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--accent-logo-color);
+  border-color: var(--accent-logo-color);
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* ------- Footer ------- */
 
