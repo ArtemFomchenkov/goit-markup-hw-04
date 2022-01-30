@@ -33,7 +33,7 @@ img {
   height: auto;
 }
 
-/* ------- Body site + ------- */
+/* ------- Body site ------- */
 
 body {
   font-family: Roboto, sans-serif;
@@ -167,6 +167,17 @@ button {
 .link:focus,
 .link.current {
   color: var(--accent-logo-color);
+}
+
+.contact .link .icon-h-envelope,
+.contact .link .icon-h-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact .item .link {
+  display: flex;
+  align-items: center;
 }
 
 /* ------- Main Section ------- */
