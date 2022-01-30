@@ -195,11 +195,23 @@ button {
 
 /* ------- Hero ------- */
 
-.hero {
+.hero.section {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--third-bg-color);
-  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
 }
 
 .hero-title {
@@ -451,7 +463,6 @@ border-radius: 0px 0px 4px 4px; */
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   color: var(--social-network-bg-color);
   border: 1px solid var(--social-network-bg-color);
 }
